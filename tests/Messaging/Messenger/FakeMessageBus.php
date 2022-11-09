@@ -10,14 +10,19 @@ use Symfony\Component\Messenger\MessageBusInterface as MessageBus;
 
 final class FakeMessageBus implements MessageBus
 {
-    public array $messages = [];
+    private array $dispatchedMessages = [];
 
     public function dispatch(object $message, array $stamps = []): Envelope
     {
         if ($message instanceof DomainEvent) {
-            $this->messages[] = $message;
+            $this->dispatchedMessages[] = $message;
         }
 
         return new Envelope($message, $stamps);
+    }
+
+    public function dispatchedMessages(): array
+    {
+        return $this->dispatchedMessages;
     }
 }

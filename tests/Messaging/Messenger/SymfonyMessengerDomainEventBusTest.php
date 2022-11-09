@@ -17,12 +17,16 @@ final class SymfonyMessengerDomainEventBusTest extends TestCase
         array $domainEvents,
         int $numberOfDomainEvents
     ): void {
-        $fakeMessageBus = new FakeMessageBus();
-        $domainEventBus = new SymfonyMessengerDomainEventBus($fakeMessageBus);
+        $domainEventBus = new SymfonyMessengerDomainEventBus(
+            $fakeMessageBus = new FakeMessageBus()
+        );
 
         $domainEventBus->publish(...$domainEvents);
 
-        $this->assertCount($numberOfDomainEvents, $fakeMessageBus->messages);
+        $this->assertCount(
+            expectedCount: $numberOfDomainEvents,
+            haystack: $fakeMessageBus->dispatchedMessages()
+        );
     }
 
     public function provideDomainEvents(): iterable
