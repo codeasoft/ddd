@@ -29,7 +29,7 @@ final class SymfonyMessengerDomainEventBusTest extends TestCase
     {
         $domainEvent = $this->createMock(DomainEvent::class);
 
-        for($count = 1; $count <= 3; ++$count) {
+        for ($count = 1; $count <= 3; ++$count) {
             yield [
                 'domainEvents' => array_fill(0, $count, $domainEvent),
                 'numberOfDomainEvents' => $count,
