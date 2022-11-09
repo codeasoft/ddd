@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Codea\SharedKernel\Test\Domain\Event;
+namespace Codea\Ddd\Test;
 
-use Codea\SharedKernel\Domain\DomainEvent;
-use Codea\SharedKernel\Domain\DomainEventOccurrence;
+use Codea\Ddd\DomainEvent;
+use Codea\Ddd\DomainEventOccurrence;
 use PHPUnit\Framework\TestCase;
 
 final class DomainEventOccurrenceTest extends TestCase
