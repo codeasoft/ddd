@@ -1,0 +1,38 @@
+{
+  "name": "codea/ddd",
+  "description": "A set of design patterns and building blocks that you can use to design domain-driven system in PHP",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Edo Barnas",
+      "email": "iam@edobarnas.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Codea\\Ddd\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Codea\\Ddd\\Test\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "symfony/messenger": "^6.1"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "1.9.*",
+    "phpstan/phpstan-phpunit": "1.2.*",
+    "phpunit/phpunit": "9.5.*",
+    "symplify/easy-coding-standard": "11.1.*"
+  }
+}
