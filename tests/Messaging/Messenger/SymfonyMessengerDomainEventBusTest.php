@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Codea\Ddd\Test\Messaging\Messenger;
+namespace Termyn\Ddd\Test\Messaging\Messenger;
 
-use Codea\Ddd\DomainEvent;
-use Codea\Ddd\Messaging\Messenger\SymfonyMessengerDomainEventBus;
 use PHPUnit\Framework\TestCase;
+use Termyn\Ddd\DomainEvent;
+use Termyn\Ddd\Messaging\Messenger\SymfonyMessengerDomainEventBus;
 
 final class SymfonyMessengerDomainEventBusTest extends TestCase
 {

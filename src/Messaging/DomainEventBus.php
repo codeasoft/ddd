@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Codea\Ddd\Messaging;
+namespace Termyn\Ddd\Messaging;
 
-use Codea\Ddd\DomainEvent;
+use Termyn\Ddd\DomainEvent;
 
 interface DomainEventBus
 {

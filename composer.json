@@ -1,5 +1,5 @@
 {
-  "name": "codea/ddd",
+  "name": "termyn/ddd",
   "description": "A set of design patterns and building blocks that you can use to design domain-driven system in PHP",
   "type": "library",
   "license": "MIT",
@@ -17,12 +17,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Codea\\Ddd\\": "src/"
+      "Termyn\\Ddd\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Codea\\Ddd\\Test\\": "tests/"
+      "Termyn\\Ddd\\Test\\": "tests/"
     }
   },
   "require": {

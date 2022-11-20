@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Codea\Ddd\Test;
+namespace Termyn\Ddd\Test;
 
-use Codea\Ddd\DomainEvent;
-use Codea\Ddd\DomainEventOccurrence;
 use PHPUnit\Framework\TestCase;
+use Termyn\Ddd\DomainEvent;
+use Termyn\Ddd\DomainEventOccurrence;
 
 final class DomainEventOccurrenceTest extends TestCase
 {

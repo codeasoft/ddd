@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Codea\Ddd\Messaging;
+namespace Termyn\Ddd\Messaging;
 
 interface DomainEventHandler
 {

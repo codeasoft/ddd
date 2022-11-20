@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Codea\Ddd\Messaging\Messenger;
+namespace Termyn\Ddd\Messaging\Messenger;
 
-use Codea\Ddd\DomainEvent;
-use Codea\Ddd\Messaging\DomainEventBus;
 use Symfony\Component\Messenger\MessageBusInterface as MessageBus;
+use Termyn\Ddd\DomainEvent;
+use Termyn\Ddd\Messaging\DomainEventBus;
 
 final class SymfonyMessengerDomainEventBus implements DomainEventBus
 {

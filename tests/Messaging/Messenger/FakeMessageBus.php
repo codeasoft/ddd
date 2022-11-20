@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Codea\Ddd\Test\Messaging\Messenger;
+namespace Termyn\Ddd\Test\Messaging\Messenger;
 
-use Codea\Ddd\DomainEvent;
 use Symfony\Component\Messenger\Envelope;
 use Symfony\Component\Messenger\MessageBusInterface as MessageBus;
+use Termyn\Ddd\DomainEvent;
 
 final class FakeMessageBus implements MessageBus
 {

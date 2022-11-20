@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Codea\Ddd;
+namespace Termyn\Ddd;
 
 trait DomainEventOccurrence
 {
