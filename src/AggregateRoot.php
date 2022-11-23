@@ -6,5 +6,8 @@ namespace Termyn\Ddd;
 
 interface AggregateRoot
 {
+    /**
+     * @return array<int|string, DomainEvent>
+     */
     public function domainEvents(): array;
 }
