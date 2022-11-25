@@ -4,9 +4,7 @@ declare(strict_types=1);
 
 namespace Termyn\Ddd;
 
-use DomainException;
-
-final class ValueIsNotValid extends DomainException implements DomainFailure
+final class ValueIsNotValid extends DomainFailure
 {
     public function __construct(
         string $statement,
@@ -15,15 +13,5 @@ final class ValueIsNotValid extends DomainException implements DomainFailure
             message: $statement,
             code: 0,
         );
-    }
-
-    public function code(): int
-    {
-        return $this->getCode();
-    }
-
-    public function message(): string
-    {
-        return $this->getMessage();
     }
 }

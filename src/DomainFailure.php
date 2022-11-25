@@ -4,9 +4,24 @@ declare(strict_types=1);
 
 namespace Termyn\Ddd;
 
-interface DomainFailure
-{
-    public function code(): int;
+use DomainException;
 
-    public function message(): string;
+abstract class DomainFailure extends DomainException
+{
+    public function __construct(
+        string $message,
+        int $code
+    ) {
+        parent::__construct($message, $code);
+    }
+
+    public function message(): string
+    {
+        return $this->getMessage();
+    }
+
+    public function code(): int
+    {
+        return $this->getCode();
+    }
 }
