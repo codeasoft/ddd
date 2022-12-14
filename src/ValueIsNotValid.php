@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Termyn\Ddd;
 
-final class ValueIsNotValid extends DomainFailure
+final class ValueIsNotValid extends DomainException
 {
     public function __construct(
         string $statement,

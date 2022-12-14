@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Termyn\Ddd;
 
-use DomainException;
+use Exception;
 
-abstract class DomainFailure extends DomainException
+abstract class DomainException extends Exception
 {
     public function __construct(
         string $message,
