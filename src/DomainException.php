@@ -6,11 +6,11 @@ namespace Termyn\Ddd;
 
 use Exception;
 
-abstract class DomainException extends Exception
+class DomainException extends Exception
 {
     public function __construct(
         string $message,
-        int $code
+        int $code = 0
     ) {
         parent::__construct($message, $code);
     }
