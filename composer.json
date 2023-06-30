@@ -27,7 +27,6 @@
   },
   "require": {
     "php": "^8.2",
-    "termyn/date-time": "^0.1",
     "termyn/event": "^0.1"
   },
   "require-dev": {

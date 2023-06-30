@@ -4,12 +4,8 @@ declare(strict_types=1);
 
 namespace Termyn\Ddd;
 
-use Termyn\DateTime\Instant;
+use Termyn\Event;
 
-interface DomainEvent
+interface DomainEvent extends Event
 {
-    /**
-     * @deprecated since v0.2.0
-     */
-    public function occurredAt(): Instant;
 }
