@@ -6,6 +6,9 @@ namespace Termyn\Ddd;
 
 use Exception;
 
+/**
+ * @deprecated since v0.2.0
+ */
 class DomainException extends Exception
 {
     public function __construct(

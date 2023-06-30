@@ -8,6 +8,9 @@ use PHPUnit\Framework\TestCase;
 use Termyn\Ddd\DomainEvent;
 use Termyn\Ddd\Messaging\Messenger\SymfonyMessengerDomainEventBus;
 
+/**
+ * @deprecated since v0.2.0
+ */
 final class SymfonyMessengerDomainEventBusTest extends TestCase
 {
     /**

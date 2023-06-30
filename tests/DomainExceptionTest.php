@@ -7,6 +7,9 @@ namespace Termyn\Ddd\Test;
 use PHPUnit\Framework\TestCase;
 use Termyn\Ddd\DomainException;
 
+/**
+ * @deprecated since v0.2.0
+ */
 final class DomainExceptionTest extends TestCase
 {
     private const MESSAGE = 'Value is not valid';

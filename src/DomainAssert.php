@@ -6,6 +6,9 @@ namespace Termyn\Ddd;
 
 use Webmozart\Assert\Assert;
 
+/**
+ * @deprecated since v0.2.0
+ */
 final class DomainAssert extends Assert
 {
     protected static function reportInvalidArgument($message)

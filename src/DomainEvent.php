@@ -8,5 +8,8 @@ use Termyn\DateTime\Instant;
 
 interface DomainEvent
 {
+    /**
+     * @deprecated since v0.2.0
+     */
     public function occurredAt(): Instant;
 }

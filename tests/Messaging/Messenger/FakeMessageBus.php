@@ -8,6 +8,9 @@ use Symfony\Component\Messenger\Envelope;
 use Symfony\Component\Messenger\MessageBusInterface as MessageBus;
 use Termyn\Ddd\DomainEvent;
 
+/**
+ * @deprecated since v0.2.0
+ */
 final class FakeMessageBus implements MessageBus
 {
     private array $dispatchedMessages = [];
