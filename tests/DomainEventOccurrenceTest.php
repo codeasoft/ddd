@@ -10,11 +10,9 @@ use Termyn\Ddd\DomainEventOccurrence;
 
 final class DomainEventOccurrenceTest extends TestCase
 {
-    /**
-     * @dataProvider provideDomainEvents
-     */
-    public function testItCollectsDomainEvents(array $domainEvents): void
+    public function testItCollectsDomainEvents(): void
     {
+        $domainEvents = $this->provideDomainEvents();
         $aggregate = new class() {
             use DomainEventOccurrence;
 
@@ -29,23 +27,10 @@ final class DomainEventOccurrenceTest extends TestCase
         $this->assertCount(count($domainEvents), $aggregate->domainEvents());
     }
 
-    public function provideDomainEvents(): iterable
+    private function provideDomainEvents(): array
     {
         $domainEvent = $this->createMock(DomainEvent::class);
-        $testCases = [
-            'one' => [
-                $domainEvent,
-            ],
-            'two' => [
-                $domainEvent,
-                $domainEvent,
-            ],
-        ];
 
-        foreach ($testCases as $useCase => $domainEvents) {
-            yield $useCase => [
-                'domainEvents' => $domainEvents,
-            ];
-        }
+        return array_fill(0, 2, $domainEvent);
     }
 }
