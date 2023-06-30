@@ -27,11 +27,8 @@
   },
   "require": {
     "php": "^8.2",
-    "symfony/messenger": "^6.2",
-    "doctrine/orm": "^2.15",
     "termyn/date-time": "^0.1",
-    "termyn/event": "^0.1",
-    "webmozart/assert": "^1.11"
+    "termyn/event": "^0.1"
   },
   "require-dev": {
     "phpstan/phpstan": "1.10.*",
