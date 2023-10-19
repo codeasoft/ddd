@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace Termyn\Ddd;
 
 use RuntimeException;
-use Termyn\Id;
+use Stringable;
 
 final class AggregateNotFound extends RuntimeException
 {
-    public function __construct(Id $id, string $entity)
+    public function __construct(Stringable|string|int $id, string $type)
     {
         parent::__construct(
-            sprintf('Aggregate of type %s for ID %s not found.', $id, $entity)
+            sprintf('Aggregate of type %s for ID %s not found.', $id, $type)
         );
     }
 }
